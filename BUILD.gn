@@ -73,10 +73,16 @@ action("kernel") {
   }
 }
 
-_module_targets = []
-_module_index = 0
+_module_files = []
 foreach(item, _selection.files) {
   if (item.role == "module") {
+    _module_files += [ item ]
+  }
+}
+_module_targets = []
+if (_module_files != []) {
+  _module_index = 0
+  foreach(item, _module_files) {
     _name = "module_${_module_index}"
     _module_targets += [ ":$_name" ]
     _module_index += 1

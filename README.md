@@ -1,5 +1,8 @@
 # malbec kernel integration
 
+Keep local manifests, payloads and prepared selections under `private/`, which
+is ignored by Git. Paths outside the repository are also accepted.
+
 Prepare a private GN selection from the source root:
 
 ```sh
