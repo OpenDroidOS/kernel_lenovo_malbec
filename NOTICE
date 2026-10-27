@@ -4,3 +4,9 @@ Apache-2.0; see LICENSE.
 
 Uses OpenHarmony build interfaces.
 https://github.com/openharmony/build
+
+The kernel payload in prebuilt/ is separate third-party material licensed
+under GPL-2.0 WITH Linux-syscall-note. See prebuilt/COPYING and the retained
+license texts there. README.md links the corresponding kernel source.
+The Apache-2.0 license above applies to original
+OpenDroidOS integration files, not the kernel payload.

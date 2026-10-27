@@ -1,5 +1,18 @@
 {
   "format_version": 1,
-  "state": "unselected",
-  "files": []
+  "state": "selected",
+  "files": [
+    {
+      "role": "kernel",
+      "path": "prebuilt/Image",
+      "sha256": "b7c2c38f1b46acd7ceac8ab0204babcc118a07d43ae84be1a59b998f8dbb3ca4",
+      "destination": "kernel/Image"
+    },
+    {
+      "role": "config",
+      "path": "prebuilt/kernel.config",
+      "sha256": "4bc095f8fb1b94d9841393ae949492f38328d9919f7e99d0853fdf2c989b4719",
+      "destination": "kernel/.config"
+    }
+  ]
 }
